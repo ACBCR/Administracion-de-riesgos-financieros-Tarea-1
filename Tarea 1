@@ -1,0 +1,61 @@
+title: "Tarea 1"
+output: html_document
+date: '2022-09-13'
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+# Loads tidyquant, lubridate, xts, quantmod, TTR, and PerformanceAnalytics
+library(tidyverse)
+library(tidyquant)  
+# Use FANG data set
+data("FANG")
+end <- as_date("2016-12-31")
+start <- end - weeks(6)
+## Descripción del sector
+Con 225.042 hectáreas cultivadas y con una producción de 14.690.034 qqm,  este producto se alza como el cultivo más importante de Chile. 
+El sector escogido para el desarrollo de este proyecto corresponde al sector agrícola, que definimos como el sector cuyo fin es la producción de alimentos de origen vegetal para el consumo humano y/o animal. En particular nos enfocaremos en la industria del trigo, debido a todos los productos que derivan de este, como harinas,pan,pastas, entre otros. 
+Según un estudio realizado por fortunebusinessinsights el 2021, El mercado de harina de trigo, el producto principal que se obtiene del trigo, tenía un tamaño de 155,8 miles de millones de USD el 2020 y se esperaba que llegara a la cifra de 160 miles de millones de usd para el 2021. 
+Entre los factores que empujan el crecimiento del mercado están
+El incremento en la demanda de productos de panadería, pastelería y similares en Asia Pacífico y Medio Oriente
+La innovación en la industria de la panadería, para volver sus productos más saludables, con técnicas como la adición de vitaminas y nutrientes adicionales.
+Dentro de los factores que restringen el crecimiento del mercado están 
+El cambio en las preferencias de los consumidores hacia productos libres de gluten.
+La aparición de sustitutos de las harinas convencionales de trigo.
+Composición de la industria por aplicaciones.
+
+Gráfico 1. “Global Wheat Flour Market Share, By Aplication, 2020”
+Como podemos observar en el gráfico, la principal industria que consume este producto es la industria alimentaria, en particular la industria panadera. Luego está la industria de pastas y fideos. y por último otras aplicaciones.
+Con respecto a este mercado a nivel mundial se presenta la siguiente tabla.
+
+
+Tabla 1. Consumo de los principales actores.(2015)(https://www.oecd-ilibrary.org/docserver/agr_outlook-2015-table121-en.pdf?expires=1663104591&id=id&accname=guest&checksum=C375B563D9BE85110C6545E1784913C4)
+Como podemos observar en la tabla, los principales consumidores de este producto son los países en desarrollo, que representan ⅔ aproximadamente del mercado mundial y los principales consumidores individuales son China, India y E.E.U.U. 
+Por último las principales compañías claves en este mercado son. 
+Ardent Mills (Colorado, U.S.) 
+Wudeli Flour Mill Group (China) 
+ADM Company (Illinois, U.S.) 
+General Mills (Minnesota, U.S.) 
+Allied Pinnacle Pty Ltd. (NSW, Australia)
+Manildra Milling Pvt. Ltd. (NSW, Australia) 
+Acarsan Flour (Turkey) 
+Korfez Flour Mill (Delaware, U.S.) 
+George Weston Foods Ltd. (Toronto, U.S.)
+Hodgson Mills, Inc (Toronto, U.S.) 
+ https://www.fortunebusinessinsights.com/wheat-flour-market-106313 
+
+## Motivación 
+ Se tiene  interés en Comprender el sector agrícola y los efectos y riesgos que puedan derivar de distintas variables económicas a través del análisis  del mercado del trigo el cual es el mayor sector en la agricultura en Chile y las evoluciones de las distintas variables económicas que se estudiaran para analizar este mercado.
+El trigo es uno de los recursos agrícolas más importantes y más ampliamente utilizados a nivel mundial, sus múltiples aplicaciones para uso alimentario tanto de seres humanos como de animales hacen que el mercado que genera esta materia prima, sea uno muy interesante para estudiar.
+La motivación para estudiar este mercado, surge después del conflicto entre Rusia y Ucrania, en donde mucho se especuló sobre el alza en el precio del trigo, y las consecuencias que la escasez de este producto podría desencadenar a nivel mundial. En Chile el pan(producto elaborado con trigo) es el segundo alimento más consumido por las familias, por lo que alzas en su precio impactan fuertemente en la canasta familiar y generan inflación, como encontramos en un extracto del boletín de IPC. Emitido por el ine en abril de este año
+ “Alimentos y bebidas no alcohólicas anotó aumentos mensuales en nueve de sus once clases. La más importante fue pan y cereales (3,0%) que incidió 0,131pp., mientras que aceites y grasas (16,4%) contribuyó con 0,096pp.” https://www.ine.cl/docs/default-source/%C3%ADndice-de-precios-al-consumidor/boletines/espa%C3%B1ol/2022/bolet%C3%ADn-%C3%ADndice-de-precios-al-consumidor-(ipc)-abril-2022.pdf?sfvrsn=d5010f19_4
+Lo que nos comprueba que el trigo y derivados, con un aumento pequeño, logra incidir mucho más que otros productos de la misma categoría, con magnitudes de variación mucho mayores.
+Es por esto que nos proponemos estudiar el mercado del trigo, el funcionamiento de este y las variables económicas que intervienen en este mercado.
+
+## Contexto
+El trigo es un sector el cual es importado y exportado de gran manera por los países, por lo que es afectado de gran manera por los cambios de divisas, en especial por el dólar relacionada a las monedas nacionales de los distintos países, también afecta los cambios en el precio del petróleo, ya que el costo de transporte y de  producción aumentan con el aumento de este.
+
+## Deuda
+
+## Emisión
+
+## Derivados
